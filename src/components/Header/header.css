@@ -1,0 +1,42 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+/* Agar Poppins Fonti sizda bo'lmasa shu👆👆 linkni comment"dan chiqaring */
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #061A23;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin: 0 10px 0 10px;
+    line-height: 50px;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+select {
+    outline: none;
+    background: transparent;
+    color: #fff;
+    /* border: 1px solid red; */
+    border: none;
+    margin: 15px 20px 0 0;
+    width: 60px;
+}
+
+option {
+    border-radius: none;
+    background: transparent;
+    border: none;
+    color: #061A23;
+}
