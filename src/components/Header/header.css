@@ -24,6 +24,12 @@ li a {
     color: #fff;
 }
 
+li a:hover {
+    transition: .5s;
+    color: #49B265;
+}
+
+
 select {
     outline: none;
     background: transparent;
@@ -40,4 +46,3 @@ option {
     border: none;
     color: #061A23;
 }
-
