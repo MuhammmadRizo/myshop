@@ -1,46 +1,49 @@
-import { useEffect, useState } from "react";
+import React from "react";
+import { useTranslation } from "react-i18next";
 import "./header.css";
-import Translation from "./Data.json";
+import UseLocalStorage from "../../hooks/UseLocalStorage";
+import i18 from "../../i18";
 
 const Header = () => {
-  const [language, setLanguage] = useState(["UZB"]);
-  const [content, setContent] = useState({});
+  const { t } = useTranslation();
+  const [language, setLanguage] = UseLocalStorage("language", "en");
 
-  useEffect(() => {
-    if (language == "UZB") {
-      setContent(Translation.UZB);
-    } else if (language == "ENG") {
-      setContent(Translation.ENG);
-    } else if (language == "RUS") {
-      setContent(Translation.RUS);
+  const handleLanguageChange = () => {
+    if (language === "uz") {
+      i18.changeLanguage("ru");
+      setLanguage("ru");
+    } else if (language === "ru") {
+      i18.changeLanguage("uz");
+      setLanguage("uz");
     }
-  });
-
+  };
   return (
     <div className="header__section">
       <header>
-        <div className="header__links" >
+        <div className="header__links">
           <ul>
             <li>
-              <a href="#home">Bosh sahifa</a>
+              <a href="#home">
+                {t("Bosh sahifa")} {language === "ru" ? t("") : t("")}
+              </a>
             </li>
             <li>
-              <a href="#mebel">Mebellar</a>
+              <a href="#mebel">
+                {t("Mebellar")} {language === "ru" ? t("") : t("")}
+              </a>
+            </li>
+
+            <li>
+              <a href="#contact">{t("Aloqa")} {language === "ru" ? t("") : t("")}</a>
             </li>
           </ul>
         </div>
 
         <div className="header__selection">
-          <select
-            value={language}
-            onChange={(e) => {
-              setLanguage(e.target.value);
-            }}
-          >
-            <option value="UZB">UZB</option>
-            <option value="ENG">ENG</option>
-            <option value="RUS">RUS</option>
-          </select>
+          <button className="number__btn">(+998) 999 99 99</button>
+          <button className="tr__btn" onClick={handleLanguageChange}>
+            {t("UZB")} {language === "ru" ? t("") : t("")}
+          </button>
         </div>
       </header>
     </div>
