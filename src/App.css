@@ -4,6 +4,8 @@
 }
 
 .App {
+  background: linear-gradient(#00BCB4 , #C4E86B);
+  overflow: hidden;
   text-align: center;
   font-family: Poppins, sans-serif;
 }

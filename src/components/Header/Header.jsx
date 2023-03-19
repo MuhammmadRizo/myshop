@@ -1,4 +1,6 @@
 import React from "react";
+import { CgProfile } from 'react-icons/cg'
+import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { useTranslation } from "react-i18next";
 import "./header.css";
 import UseLocalStorage from "../../hooks/UseLocalStorage";
@@ -40,7 +42,11 @@ const Header = () => {
         </div>
 
         <div className="header__selection">
-          <button className="number__btn">(+998) 999 99 99</button>
+          <p className="number__btn">(+998) 999 99 99</p>
+          <div className="header__icons">
+            <span className="header__profile"><CgProfile /></span>
+            <span className="header__shopping"><AiOutlineShoppingCart /></span>
+          </div>
           <button className="tr__btn" onClick={handleLanguageChange}>
             {t("UZB")} {language === "ru" ? t("") : t("")}
           </button>
