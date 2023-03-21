@@ -1,0 +1,19 @@
+.decarition__section {
+    margin: 100px 0 0 0;
+    color: #CCCCCC;
+}
+
+.card__about {
+    display: flex;
+    margin: 35px 50px 0 50px;
+    align-items: center;
+}
+
+.card__about p {
+    font-size: 20px;
+    margin: 0 50px 0 50px;
+}
+
+.right img{
+    width: 400px;
+}

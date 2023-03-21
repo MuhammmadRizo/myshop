@@ -21,6 +21,10 @@ const Body = () => {
   };
   return (
     <div className="body__section">
+
+      <h1 className="body__title">{t("Yaxshi")} {language === "ru" ? t("") : t("")}</h1>
+      <p className="juda__yaxshi">{t("body__para")}  {language === "ru" ? t("") : t("")}</p>
+
       <div className="cards">
         <div className="first__card card">
           <img src={CardIMG} alt="" />
@@ -38,10 +42,10 @@ const Body = () => {
             </div>
 
             <div className="card__right">
-              <h1>
+              <h1 className="card__title">
                 {t("Mebel")} {language === "ru" ? t("") : t("")}
               </h1>
-              <p>
+              <p className="card__paragrph">
                 {t("Yangi mebel")} {language === "ru" ? t("") : t("")}
               </p>
             </div>
@@ -73,10 +77,10 @@ const Body = () => {
             </div>
 
             <div className="card__right">
-              <h1>
+              <h1 className="card__title">
                 {t("Mebel")} {language === "ru" ? t("") : t("")}
               </h1>
-              <p>
+              <p className="card__paragrph">
                 {t("Yangi mebel")} {language === "ru" ? t("") : t("")}
               </p>
             </div>
@@ -107,10 +111,10 @@ const Body = () => {
             </div>
 
             <div className="card__right">
-              <h1>
+              <h1 className="card__title">
                 {t("Mebel")} {language === "ru" ? t("") : t("")}
               </h1>
-              <p>
+              <p className="card__paragrph">
                 {t("Yangi mebel")} {language === "ru" ? t("") : t("")}
               </p>
             </div>
@@ -141,10 +145,10 @@ const Body = () => {
             </div>
 
             <div className="card__right">
-              <h1>
+              <h1 className="card__title">
                 {t("Mebel")} {language === "ru" ? t("") : t("")}
               </h1>
-              <p>
+              <p className="card__paragrph">
                 {t("Yangi mebel")} {language === "ru" ? t("") : t("")}
               </p>
             </div>
@@ -176,10 +180,10 @@ const Body = () => {
             </div>
 
             <div className="card__right">
-              <h1>
+              <h1 className="card__title">
                 {t("Mebel")} {language === "ru" ? t("") : t("")}
               </h1>
-              <p>
+              <p className="card__paragrph">
                 {t("Yangi mebel")} {language === "ru" ? t("") : t("")}
               </p>
             </div>
@@ -209,10 +213,10 @@ const Body = () => {
             </div>
 
             <div className="card__right">
-              <h1>
+              <h1 className="card__title">
                 {t("Mebel")} {language === "ru" ? t("") : t("")}
               </h1>
-              <p>
+              <p className="card__paragrph">
                 {t("Yangi mebel")} {language === "ru" ? t("") : t("")}
               </p>
             </div>
@@ -242,10 +246,10 @@ const Body = () => {
             </div>
 
             <div className="card__right">
-              <h1>
+              <h1 className="card__title">
                 {t("Mebel")} {language === "ru" ? t("") : t("")}
               </h1>
-              <p>
+              <p className="card__paragrph">
                 {t("Yangi mebel")} {language === "ru" ? t("") : t("")}
               </p>
             </div>
@@ -276,10 +280,10 @@ const Body = () => {
             </div>
 
             <div className="card__right">
-              <h1>
+              <h1 className="card__title">
                 {t("Mebel")} {language === "ru" ? t("") : t("")}
               </h1>
-              <p>
+              <p className="card__paragrph">
                 {t("Yangi mebel")} {language === "ru" ? t("") : t("")}
               </p>
             </div>
