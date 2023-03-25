@@ -51,7 +51,7 @@ const Body = () => {
             </div>
           </div>
 
-          <form action="">
+          <form className="body__form" action="">
             <button className="first__card-btn btn">
               {t("Batafsil")} {language === "ru" ? t("") : t("")}
             </button>

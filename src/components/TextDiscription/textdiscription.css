@@ -1,10 +1,13 @@
 .decarition__section {
-    margin: 100px 0 0 0;
+    margin: 20px 0 0 0;
+    padding-top: 80px;
     color: #CCCCCC;
+    position: relative;
 }
 
 .card__about {
     display: flex;
+    flex-wrap: wrap;
     margin: 35px 50px 0 50px;
     align-items: center;
 }
@@ -12,8 +15,15 @@
 .card__about p {
     font-size: 20px;
     margin: 0 50px 0 50px;
+    width: 600px;
 }
 
 .right img{
     width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    .card__about .right img {
+        margin: 50px 0 0 50px;
+    }
 }

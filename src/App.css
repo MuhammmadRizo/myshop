@@ -7,8 +7,10 @@
 
 .App {
   background: linear-gradient(#00BCB4 ,#058d86 );
+  /* background: #fff; */
+  /* background: #F7EDE2; */
   /* background: linear-gradient(#00BCB4 , #C4E86B); */
-  overflow: hidden;
+  /* overflow: hidden; */
   text-align: center;
   font-family: Poppins, sans-serif;
   /* font-family: 'IBM Plex Mono', monospace; */

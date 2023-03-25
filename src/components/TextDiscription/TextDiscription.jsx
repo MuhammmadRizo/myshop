@@ -20,7 +20,7 @@ const TextDiscription = () => {
     }
   };
   return (
-    <div className='decarition__section'>
+    <div className='decarition__section' id='about'>
         <h1 className='haqimizda'>{t("Haqimizda")} {language === "ru" ? t("") : t("")}</h1>
 
         <div className="card__about">

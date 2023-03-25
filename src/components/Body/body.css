@@ -1,9 +1,10 @@
 .body__section {
-  margin: 100px 0 0 0;
+  padding: 100px 0 0 0;
+  overflow: hidden;
 }
 
 .body__title {
-  color: #053F5C;
+  color: #053f5c;
 }
 
 .juda__yaxshi {
@@ -15,10 +16,10 @@
 
 .cards {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin: 30px 0 0 0;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 30px 0 0 0;
 }
 
 .card__title {
@@ -29,14 +30,26 @@
   overflow: hidden;
   width: auto;
   height: auto;
-  /* background: #2ef14fa2; */
-  background: #e4eddc;
-  background: rgba(255, 255, 255, 0);
-  /* backdrop-filter: blur(10px); */
+    /* background: #FBC43F; */
+    /* background: #48B5D6; */
   border: 1px solid #000;
-  border-radius: 15px;
-  /* background: #00879D; */
+   border-radius: 15px;   
 }
+
+/* .cards .card::before,
+.cards .card::after {
+  content: "";
+  inset: 0;
+  background: linear-gradient(
+    0deg
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5),
+  );
+}
+.cards .card::after {
+  filter: blur(3.5rem);
+} */
 
 .first__card img {
   width: 300px;
@@ -44,7 +57,7 @@
   /* backdrop-filter: blur(2px); */
 }
 
-form {
+.body__form {
   display: flex;
   justify-content: space-around;
 }
@@ -62,7 +75,7 @@ form {
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 30px;
-  color: #181E20;
+  color: #181e20;
 }
 
 .btn:hover {

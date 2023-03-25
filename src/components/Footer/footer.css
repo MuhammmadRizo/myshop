@@ -1,0 +1,100 @@
+.section__footer {
+  height: 200px;
+  color: #fff;
+  background: #000;
+  margin-top: 80px;
+  padding: 50px 0 0 150px;
+  position: relative;
+}
+
+.footer__links {
+  /* display: block; */
+  text-align: start;
+}
+
+.footer__links li {
+  list-style: none;
+}
+
+.footer__links li a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 30px;
+}
+
+.footer__social {
+  position: absolute;
+  bottom: 10px;
+  left: 150px;
+}
+
+.footer__social a {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.footer__form {
+  position: absolute;
+  top: 25%;
+  left: 42%;
+  flex-wrap: wrap;
+}
+
+.footer__form input {
+  height: 25px;
+  width: 200px;
+  outline: none;
+  padding: 10px;
+  background: transparent;
+  /* border: 1px solid #eee; */
+  color: #fff;
+}
+
+/* .form__buttons1 {
+    margin: 0 0 0 -550px;
+} */
+
+.form__buttons1 {
+    width: 130px;
+    height: 40px;
+}
+
+.form__buttons {
+    margin-left: 145px;
+    height: 40px;
+    width: 290px;
+    margin-right: 10px;
+    width: 120px;
+    background: darkgray !important;
+}
+
+.form__buttons2 {
+    margin-left: 280px;
+    width: 140px;
+    height: 40px;
+    background: #4267B2 !important;
+}
+
+.social__twit, .social__face, .social__link, .social__tg {
+    color: #fff;
+}
+
+.social__twit:hover {
+    color: #1DA1F2;
+    transition: .5s;
+}
+
+.social__face:hover {
+    color: #4267B2;
+    transition: .5s;
+}
+
+.social__link:hover {
+    color: #0077b5;
+    transition: .5s;
+}
+
+.social__tg:hover {
+    color: #0088cc;
+    transition: .5s;
+}
